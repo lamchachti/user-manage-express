@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+      "target": "es6",                           // Objetivo de compilación de JavaScript
+      "module": "commonjs",                      // Sistema de módulos a utilizar
+      "strict": true,                            // Activar todas las verificaciones estrictas
+      "esModuleInterop": true,                   // Habilitar la interoperabilidad de módulos ES
+      "skipLibCheck": true,                      // Omitir la verificación de tipos en los archivos de declaración
+      "forceConsistentCasingInFileNames": true,  // Forzar el uso consistente de mayúsculas y minúsculas en los nombres de archivo
+      "outDir": "./dist",                        // Directorio de salida de los archivos compilados
+      "rootDir": "./src",                        // Directorio raíz de los archivos de entrada
+      "baseUrl": "./",                           // Base URL para la resolución de módulos
+      "paths": {                                 // Mapear rutas de importación a directorios
+        "@/*": ["src/*"]
+      },
+      "resolveJsonModule": true,                 // Permitir la importación de módulos JSON
+      "sourceMap": true                          // Generar archivos de mapa de origen
+    },
+    "include": [
+      "src/**/*"                                 // Incluir todos los archivos en el directorio src
+    ],
+    "exclude": [
+      "node_modules",                            // Excluir el directorio node_modules
+      "dist"                                     // Excluir el directorio de salida
+    ]
+  }
+  
